@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { FaCar, FaUserTie, FaHandshake, FaArrowRight } from "react-icons/fa";
+import { FaCar, FaUserTie, FaHandshake, FaArrowRight, FaMapMarkerAlt } from "react-icons/fa";
 
 export default function AboutUsPage() {
   return (
@@ -41,7 +41,7 @@ export default function AboutUsPage() {
               {/* Title */}
               <div className="overflow-hidden relative">
                 <div className="relative z-10">
-                  <h1 className="text-6xl md:text-8xl font-bold tracking-tight leading-tight text-secondary transition-all duration-700 ease-in-out">
+                  <h1 className="text-4xl md:text-8xl font-bold tracking-tight leading-tight text-secondary transition-all duration-700 ease-in-out">
                     About Us
                   </h1>
                 </div>
@@ -156,8 +156,8 @@ export default function AboutUsPage() {
                 <p className="text-foreground/70 leading-relaxed">
                   Today, we continue to expand our fleet and services, always staying 
                   true to our core values of quality, reliability, and customer satisfaction. 
-                  Whether you&apos;re renting for a special occasion or business needs, 
-                  we&apos;re here to exceed your expectations.
+                  Whether you're renting for a special occasion or business needs, 
+                  we're here to exceed your expectations.
                 </p>
               </div>
             </div>
@@ -166,7 +166,7 @@ export default function AboutUsPage() {
       </section>
 
       {/* Location Section */}
-      <section className="py-24 px-4 relative overflow-hidden">
+      <section id="location" className="py-24 px-4 relative overflow-hidden">
         <div className="absolute inset-0 bg-grid-pattern opacity-5" />
         <div className="absolute top-20 right-0 w-72 h-72 bg-primary/5 rounded-full blur-3xl animate-pulse" />
         <div className="absolute -bottom-20 -left-20 w-72 h-72 bg-secondary/5 rounded-full blur-3xl animate-pulse" />
@@ -186,7 +186,10 @@ export default function AboutUsPage() {
             {/* Location Info */}
             <div className="space-y-8 p-8 bg-background/80 backdrop-blur-xl rounded-[40px] border border-secondary/10">
               <div className="space-y-4">
-                <h4 className="text-2xl font-bold text-foreground">CarRent Headquarters</h4>
+                <h4 className="text-2xl font-bold text-foreground flex items-center gap-2">
+                  <FaMapMarkerAlt className="w-6 h-6 text-secondary" />
+                  CarRent Headquarters
+                </h4>
                 <div className="space-y-2 text-foreground/70">
                   <p>123 Luxury Drive</p>
                   <p>Silicon Valley, CA 94025</p>
