@@ -33,10 +33,10 @@ const Hero = () => {
             </div>
 
             {/* Floating badge */}
-            <div className="absolute -right-4 top-1/2 transform -translate-y-1/2 bg-background/80 backdrop-blur-xl p-4 rounded-2xl shadow-xl border border-secondary/80 z-20 hover:scale-105 hover:shadow-2xl transition-all duration-500 ease-in-out cursor-pointer">
+            <div className="absolute -right-2 sm:-right-4 top-1/2 transform -translate-y-1/2 bg-background/80 backdrop-blur-xl p-2 sm:p-4 rounded-xl sm:rounded-2xl shadow-xl border border-secondary/80 z-20 hover:scale-105 hover:shadow-2xl transition-all duration-500 ease-in-out cursor-pointer">
               <div className="text-center transition-all duration-500 ease-in-out">
-                <p className="text-sm font-semibold text-secondary hover:text-secondary/80 transition-all duration-500 ease-in-out">Starting from</p>
-                <p className="text-2xl font-bold transition-all duration-500 ease-in-out">Rp 350,000<span className="text-sm text-foreground/70">/day</span></p>
+                <p className="text-xs sm:text-sm font-semibold text-secondary hover:text-secondary/80 transition-all duration-500 ease-in-out">Starting from</p>
+                <p className="text-xl sm:text-2xl font-bold transition-all duration-500 ease-in-out">Rp 350,000<span className="text-xs sm:text-sm text-foreground/70">/day</span></p>
               </div>
             </div>
 
