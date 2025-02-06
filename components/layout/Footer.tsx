@@ -5,7 +5,7 @@ import { FaInstagram, FaTwitter, FaGithub, FaCarAlt, FaMapMarkerAlt, FaPhoneAlt,
 
 const Footer = () => {
   const quickLinks = [
-    { name: 'About Us', href: '#', icon: <FaCarAlt className="w-4 h-4" /> },
+    { name: 'About Us', href: '/about-us', icon: <FaCarAlt className="w-4 h-4" /> },
     { name: 'Our Location', href: '#', icon: <FaMapMarkerAlt className="w-4 h-4" /> },
     { name: 'Contact Us', href: '#', icon: <FaPhoneAlt className="w-4 h-4" /> },
     { name: 'Email Us', href: '#', icon: <FaEnvelope className="w-4 h-4" /> },

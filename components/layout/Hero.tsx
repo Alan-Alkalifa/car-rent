@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -43,8 +44,8 @@ const Hero = () => {
             {/* Additional decorative elements */}
             <div className="absolute -bottom-4 left-4 bg-background/40 backdrop-blur-md px-4 py-2 rounded-full shadow-lg border border-secondary/10 z-20 hover:scale-105 hover:shadow-xl transition-all duration-500 ease-in-out">
               <div className="flex items-center space-x-2 transition-all duration-500 ease-in-out">
-                <span className="w-2 h-2 rounded-full bg-secondary animate-pulse transition-all duration-500 ease-in-out" />
-                <span className="text-sm font-medium hover:text-secondary transition-all duration-500 ease-in-out">Available Now</span>
+                <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse transition-all duration-500 ease-in-out" />
+                <span className="text-sm font-medium hover:text-secondary transition-all duration-500 ease-in-out">Booked Now</span>
               </div>
             </div>
           </div>
@@ -76,14 +77,14 @@ const Hero = () => {
                   </span>
                 </span>
               </button>
-              <button className="group relative px-8 py-4 rounded-full text-base font-medium border-2 border-secondary text-secondary hover:bg-secondary/10 hover:scale-105 transition-all duration-500 ease-in-out">
+              <Link href="/about-us" className="group relative px-8 py-4 rounded-full text-base font-medium border-2 border-secondary text-secondary hover:bg-secondary/10 hover:scale-105 transition-all duration-500 ease-in-out">
                 <span className="relative z-10 flex items-center justify-center transition-all duration-500 ease-in-out">
                   About Us
                   <span className="inline-block ml-2 transform group-hover:translate-x-1 transition-all duration-500 ease-in-out">
                     →
                   </span>
                 </span>
-              </button>
+              </Link>
             </div>
 
             {/* Stats */}
