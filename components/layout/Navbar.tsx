@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { FaCarAlt } from "react-icons/fa";
 
 const Navbar = () => {
   const [language, setLanguage] = useState<"EN" | "ID">("EN");
@@ -17,33 +18,18 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link 
-            href="/" 
-            className="flex items-center group"
-          >
-            <span className="text-3xl flex items-center font-bold text-secondary transition-colors">
-              C
-              <span className="inline-flex items-center mx-[-2px]">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="28"
-                  height="28"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="transform group-hover:scale-110 transition-transform"
-                >
-                  <path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2" />
-                  <circle cx="7" cy="17" r="2" />
-                  <circle cx="17" cy="17" r="2" />
-                </svg>
-              </span>
-              r
-            </span>
-            <span className="text-3xl font-bold text-secondary transition-colors">Rent</span>
-          </Link>
+                href="/" 
+                className="flex items-center group"
+              >
+                <span className="text-3xl flex items-center font-bold text-secondary transition-colors">
+                  C
+                  <span className="inline-flex items-center mx-[-2px]">
+                    <FaCarAlt className="w-7 h-7 transform group-hover:scale-110 transition-transform" />
+                  </span>
+                  r
+                </span>
+                <span className="text-3xl font-bold text-secondary transition-colors">Rent</span>
+              </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-6">

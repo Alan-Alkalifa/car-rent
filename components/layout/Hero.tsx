@@ -19,14 +19,14 @@ const Hero = () => {
             <div className="absolute inset-0 bg-primary/5 rounded-[40px] transform rotate-3 hover:rotate-6 transition-all duration-1000 ease-in-out" />
             
             {/* Image container */}
-            <div className="absolute inset-0 h-full rounded-[40px] overflow-hidden group transition-all duration-1000 ease-in-out">
+            <div className="absolute inset-0 h-full rounded-[40px] overflow-hidden group transition-all duration-1000 ease-in-out animate-slide-left">
               <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent z-10 transition-all duration-1000 ease-in-out" />
               <div className="relative w-full h-full flex items-center justify-center p-8 transition-all duration-1000 ease-in-out">
                 <Image
                   src="/car-hero.png"
                   alt="Luxury Car"
                   fill
-                  className="object-contain transform group-hover:scale-105 transition-all duration-1000 ease-in-out"
+                  className="object-contain transform group-hover:scale-105 transition-all duration-1000 ease-in-out opacity-0 animate-fade-in"
                   priority
                 />
               </div>
@@ -52,14 +52,16 @@ const Hero = () => {
           {/* Left content */}
           <div className="space-y-8 md:space-y-10 text-center lg:text-left transition-all duration-700 ease-in-out order-last lg:order-first">
             <div className="space-y-5">
-              <h2 className="inline-block text-sm font-semibold px-3 py-1 bg-secondary/10 text-secondary rounded-full hover:bg-secondary/20 transition-all duration-500 ease-in-out">
+              <h2 className="inline-block text-sm font-semibold px-3 py-1 bg-secondary/10 text-secondary rounded-full hover:bg-secondary/20 transition-all duration-500 ease-in-out opacity-0 animate-fade-in" style={{ animationDelay: '0.5s' }}>
                 #1 Indonesian Car Rental Service
               </h2>
-              <h1 className="text-4xl md:text-5xl xl:text-6xl font-bold leading-tight transition-all duration-700 ease-in-out">
-                Find Your Perfect
-                <span className="text-secondary block mt-2 animate-slide-up hover:scale-[1.02] transition-all duration-700 ease-in-out">Drive Today</span>
-              </h1>
-              <p className="text-foreground/70 text-base md:text-lg max-w-xl mx-auto lg:mx-0 leading-relaxed hover:text-foreground transition-all duration-500 ease-in-out">
+              <div className="overflow-hidden">
+                <h1 className="text-4xl md:text-5xl xl:text-6xl font-bold leading-tight transition-all duration-700 ease-in-out whitespace-nowrap overflow-hidden border-r-4 border-secondary animate-typing">
+                  Find Your Perfect
+                  <span className="text-secondary block mt-2 animate-slide-up hover:scale-[1.02] transition-all duration-700 ease-in-out">Drive Today</span>
+                </h1>
+              </div>
+              <p className="text-foreground/70 text-base md:text-lg max-w-xl mx-auto lg:mx-0 leading-relaxed hover:text-foreground transition-all duration-500 ease-in-out opacity-0 animate-fade-in" style={{ animationDelay: '2.5s' }}>
                 Discover the freedom of the open road with our premium car rental service. 
                 Easy booking, competitive rates, and exceptional service.
               </p>

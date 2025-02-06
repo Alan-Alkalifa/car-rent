@@ -26,6 +26,9 @@ export default {
       animation: {
         fadeIn: 'fadeIn 0.5s ease-in-out',
         slideUp: 'slideUp 0.5s ease-in-out',
+        'slide-left': 'slide-left 1s ease-out forwards',
+        'fade-in': 'fade-in 1.5s ease-out forwards',
+        'typing': 'typing 2s steps(20, end), blink .75s step-end infinite',
       },
       keyframes: {
         fadeIn: {
@@ -35,6 +38,21 @@ export default {
         slideUp: {
           '0%': { transform: 'translateY(20px)', opacity: '0' },
           '100%': { transform: 'translateY(0)', opacity: '1' },
+        },
+        'slide-left': {
+          '0%': { transform: 'translateX(100%)', opacity: '0' },
+          '100%': { transform: 'translateX(0)', opacity: '1' },
+        },
+        'fade-in': {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
+        'typing': {
+          'from': { width: '0' },
+          'to': { width: '100%' },
+        },
+        'blink': {
+          '50%': { borderColor: 'transparent' },
         },
       },
     },
